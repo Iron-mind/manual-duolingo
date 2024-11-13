@@ -1,0 +1,211 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #235390;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'DIN Round Pro', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #235390;
+            color: #3c3c3c;
+        }
+
+        .header {
+            background-color: #58cc02;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .get-started-btn {
+            background-color: white;
+            color: #58cc02;
+            padding: 0.75rem 1.5rem;
+            border-radius: 1.25rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .get-started-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .search-box {
+            background: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e5e5e5;
+            border-radius: 0.75rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #58cc02;
+        }
+
+        .sidebar-menu {
+            background: white;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+
+        .menu-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #3c3c3c;
+        }
+
+        .menu-items {
+            list-style: none;
+        }
+
+        .menu-item {
+            padding: 0.5rem 0;
+            color: #777;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .menu-item:hover {
+            color: #58cc02;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .main-title {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .articles {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .article-image {
+            width: 100px;
+            height: 100px;
+            background: #f5f5f5;
+            border-radius: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .article-content h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #3c3c3c;
+        }
+
+        .article-content p {
+            color: #777;
+            margin-bottom: 0.5rem;
+        }
+
+        .time-tag {
+            display: inline-flex;
+            align-items: center;
+            color: #58cc02;
+            font-weight: 600;
+        }
+
+        .time-tag::before {
+            content: "⏱";
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .nav {
+                display: none;
+            }
+        }
