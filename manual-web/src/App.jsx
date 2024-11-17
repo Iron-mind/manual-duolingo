@@ -22,6 +22,15 @@ import ComoFuncionanLigas from './home/tutorials/Ligas/ComoFuncionanLigas';
 import Ligas from './home/tutorials/Ligas';
 import PerderYRecuperarVidas from './home/tutorials/vidas/PerderYRecuperarVidas';
 import Recompensas from './home/tutorials/vidas/Recompensas';
+import NavegacionBasica from './home/tutorials/Interfaz/navegacionbasica';
+import ArticulosInterfaz from './home/tutorials/Interfaz/InterfazArticulos';
+import Sonidos from './home/tutorials/Interfaz/Sonidos';
+import LigasInterfaz from './home/tutorials/Interfaz/ligas';
+import DesafiosInterfaz from './home/tutorials/Interfaz/desafiosinterfaz';
+import TiendaInterfaz from './home/tutorials/Interfaz/tiendainterfaz';
+import PerfilInterfaz from './home/tutorials/Interfaz/perfilinterfaz';
+import ConfiguracionInterfaz from './home/tutorials/Interfaz/configuracioninterfaz';
+
 
 function App() {
 
@@ -51,6 +60,21 @@ function App() {
               <Route path="/recompensas-y-vidas" element={<RecompensasYVidas />} />
               <Route path="/Ligas" element={<Ligas />} />
               <Route path="/estadisticas" element={<Estadisticas />} />
+              <Route path="/interfaz" element={<ArticulosInterfaz/>} />
+              <Route path="/interfaz/navegacionbasica" element={<NavegacionBasica/>} />
+              <Route path="/interfaz/sonidos" element={<Sonidos/>} />
+              <Route path="/interfaz/ligas" element={<LigasInterfaz/>} />
+              <Route path="/interfaz/desafiosinterfaz" element={<DesafiosInterfaz/>} />
+              <Route path="/interfaz/tiendainterfaz" element={<TiendaInterfaz/>} />
+              <Route path="/interfaz/perfilinterfaz" element={<PerfilInterfaz/>} />
+              <Route path="/interfaz/configuracioninterfaz" element={<ConfiguracionInterfaz/>} />
+
+
+
+
+
+
+
               <Route path="/desafios" element={<Desafios />} />
               <Route path="/rachas" element={<Rachas />} />
               <Route path="/tienda" element={<Tienda />} />
