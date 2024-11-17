@@ -12,6 +12,12 @@ import Rachas from './home/tutorials/Rachas';
 import Tienda from './home/tutorials/Tienda';
 import AccederTienda from './home/tutorials/TiendaComponents/AccederTienda';
 import ComprarVidasIlimitadas from './home/tutorials/TiendaComponents/ComprarVidasIlimitadas';
+import AccederDesafios from './home/tutorials/DesafiosComponents/AccederDesafios';
+import DesafiosDiaMes from './home/tutorials/DesafiosComponents/DesafiosDiaMes';
+import ComoFuncionanRachas from './home/tutorials/rachas/ComoFuncionanRachas';
+import RecompensasRachas from './home/tutorials/rachas/RecompensasRachas';
+import AccederRachas from './home/tutorials/rachas/AccederRachas';
+import MetasRacha from './home/tutorials/rachas/MetasRacha';
 
 function App() {
 
@@ -46,7 +52,12 @@ function App() {
               <Route path="/tienda" element={<Tienda />} />
               <Route path="acceder" element={<AccederTienda />} />
         <Route path="comprar-vidas-ilimitadas" element={<ComprarVidasIlimitadas />} />
-  
+        <Route path="acceder" element={<AccederDesafios />} />
+        <Route path="dia-mes" element={<DesafiosDiaMes />} />
+        <Route path="funcionan" element={<ComoFuncionanRachas />} />
+        <Route path="recompensas" element={<RecompensasRachas />} />
+        <Route path="acceder" element={<AccederRachas />} />
+        <Route path="metas" element={<MetasRacha />} />
             </Routes>
 
           </main>
