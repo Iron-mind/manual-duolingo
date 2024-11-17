@@ -58,8 +58,9 @@ const articulos = [
 const ArticulosInterfaz = () => {
   return (
     <div>
-      <h1 class="main-title">Menus</h1>
+      <h1 className="main-title">Menus</h1>
       <Articles articles={articulos} />
+      <button>Start Now</button>
     </div>
   );
 };
