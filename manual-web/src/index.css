@@ -29,12 +29,28 @@ body {
 }
 
 .header {
-	background-color: #58cc02;
-	padding: 1rem 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #58cc02;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  flex: 1; /* Se asegura que el texto ocupe el espacio restante */
+  max-width: 60%; /* Limita el ancho del texto */
+}
+
+.image-container {
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  width: 40%; /* Limita el ancho de la imagen */
+}
+
+.responsive-img {
+  width: 100%; /* Ajusta la imagen al 100% de su contenedor */
+  height: auto; /* Mantiene la proporción */
+  object-fit: contain; /* Asegura que la imagen no se recorte */
 }
 
 .logo {
