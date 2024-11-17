@@ -6,7 +6,6 @@ import VerticalNavBar from './home/components/VerticalNavBar';
 import TutorialExample from './home/tutorials/section-example/TutorialExample';
 import RecompensasYVidas from './home/tutorials/RecompensasYVidas';
 import Estadisticas from './home/tutorials/Estadisticas';
-import Desafios from './home/tutorials/Ligas';
 import Rachas from './home/tutorials/Rachas';
 import Tienda from './home/tutorials/Tienda';
 import AccederTienda from './home/tutorials/TiendaComponents/AccederTienda';
@@ -22,6 +21,7 @@ import ComoFuncionanLigas from './home/tutorials/Ligas/ComoFuncionanLigas';
 import Ligas from './home/tutorials/Ligas';
 import PerderYRecuperarVidas from './home/tutorials/vidas/PerderYRecuperarVidas';
 import Recompensas from './home/tutorials/vidas/Recompensas';
+import Desafios from './home/tutorials/Desafios';
 
 function App() {
 
