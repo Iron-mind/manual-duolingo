@@ -9,7 +9,7 @@ const desafiosArticles = [
     title: 'Cómo acceder a desafíos',
     content: 'Para acceder a los desafíos, haz clic en el icono de desafíos en la barra de navegación.',
     image: 'https://example.com/imagen-acceder-desafios.jpg',
-    route: 'acceder'
+    route: 'accederDesafios'
   },
   {
     title: 'Desafíos del día y del mes',
@@ -25,7 +25,7 @@ const Desafios = () => {
       <h1 className="main-title">Guía de Desafíos</h1>
       <Articles articles={desafiosArticles} />
       <Routes>
-        <Route path="acceder" element={<AccederDesafios />} />
+        <Route path="accederDesafios" element={<AccederDesafios />} />
         <Route path="dia-mes" element={<DesafiosDiaMes />} />
       </Routes>
     </div>

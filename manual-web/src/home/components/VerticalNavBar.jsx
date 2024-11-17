@@ -19,8 +19,7 @@ const VerticalNavBar = () => {
           <li className="menu-item">Compartir y colaborar</li>
           <li className="menu-item">Datos e integraciones</li>
           <li className="menu-item"><Link to="/recompensas-y-vidas">Recompensas y Vidas</Link></li>
-          <li className="menu-item"><Link to="/protectores-de-racha">Protectores de Racha</Link></li>
-          <li className="menu-item"><Link to="/estadisticas">Estadísticas</Link></li>
+          <li className="menu-item"><Link to="/ligas">Ligas</Link></li>
           <li className="menu-item"><Link to="/desafios">Desafíos</Link></li>
           <li className="menu-item"><Link to="/rachas">Rachas</Link></li>
           <li className="menu-item"><Link to="/tienda">Tienda</Link></li>

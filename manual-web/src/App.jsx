@@ -5,9 +5,8 @@ import ArticlesExample from './home/tutorials/section-example/ArticlesExample';
 import VerticalNavBar from './home/components/VerticalNavBar';
 import TutorialExample from './home/tutorials/section-example/TutorialExample';
 import RecompensasYVidas from './home/tutorials/RecompensasYVidas';
-import ProtectoresDeRacha from './home/tutorials/ProtectoresDeRacha';
 import Estadisticas from './home/tutorials/Estadisticas';
-import Desafios from './home/tutorials/Desafios';
+import Desafios from './home/tutorials/Ligas';
 import Rachas from './home/tutorials/Rachas';
 import Tienda from './home/tutorials/Tienda';
 import AccederTienda from './home/tutorials/TiendaComponents/AccederTienda';
@@ -18,6 +17,11 @@ import ComoFuncionanRachas from './home/tutorials/rachas/ComoFuncionanRachas';
 import RecompensasRachas from './home/tutorials/rachas/RecompensasRachas';
 import AccederRachas from './home/tutorials/rachas/AccederRachas';
 import MetasRacha from './home/tutorials/rachas/MetasRacha';
+import AccederLigas from './home/tutorials/Ligas/AccederLigas';
+import ComoFuncionanLigas from './home/tutorials/Ligas/ComoFuncionanLigas';
+import Ligas from './home/tutorials/Ligas';
+import PerderYRecuperarVidas from './home/tutorials/vidas/PerderYRecuperarVidas';
+import Recompensas from './home/tutorials/vidas/Recompensas';
 
 function App() {
 
@@ -45,19 +49,23 @@ function App() {
               <Route path="/guia-de-inicio/personalizar-perfil" element={<ArticlesExample />} />
               <Route path="/introduccion/tutorial-ejemplo" element={<TutorialExample />} />
               <Route path="/recompensas-y-vidas" element={<RecompensasYVidas />} />
-              <Route path="/protectores-de-racha" element={<ProtectoresDeRacha />} />
+              <Route path="/Ligas" element={<Ligas />} />
               <Route path="/estadisticas" element={<Estadisticas />} />
               <Route path="/desafios" element={<Desafios />} />
               <Route path="/rachas" element={<Rachas />} />
               <Route path="/tienda" element={<Tienda />} />
               <Route path="acceder" element={<AccederTienda />} />
         <Route path="comprar-vidas-ilimitadas" element={<ComprarVidasIlimitadas />} />
-        <Route path="acceder" element={<AccederDesafios />} />
+        <Route path="accederDesafios" element={<AccederDesafios />} />
         <Route path="dia-mes" element={<DesafiosDiaMes />} />
         <Route path="funcionan" element={<ComoFuncionanRachas />} />
         <Route path="recompensas" element={<RecompensasRachas />} />
-        <Route path="acceder" element={<AccederRachas />} />
+        <Route path="accederRachas" element={<AccederRachas />} />
         <Route path="metas" element={<MetasRacha />} />
+        <Route path="accederLigas" element={<AccederLigas />} />
+        <Route path="funcionanLigas" element={<ComoFuncionanLigas />} />
+        <Route path="perder-recuperar-vidas" element={<PerderYRecuperarVidas />} />
+        <Route path="recompensas" element={<Recompensas />} />
             </Routes>
 
           </main>

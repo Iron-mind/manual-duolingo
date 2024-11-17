@@ -29,8 +29,7 @@ const RecompensasRachas = () => {
           <li>Monedas adicionales.</li>
           <img src="https://example.com/imagen-recompensas-rachas-1.jpg" alt="Recompensas 1" style={styles.stepImage} />
           <li>Bonificaciones de experiencia.</li>
-          <img src="https://example.com/imagen-recompensas-rachas-2.jpg" alt="Recompensas 2" style={styles.stepImage} />
-        </ul>
+                  </ul>
       </div>
     </div>
   );

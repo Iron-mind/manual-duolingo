@@ -30,6 +30,8 @@ const ComoFuncionanRachas = () => {
           <img src="https://example.com/imagen-funcionan-rachas-1.jpg" alt="Paso 1" style={styles.stepImage} />
           <li>Verifica tu progreso en la sección de rachas.</li>
           <img src="https://example.com/imagen-funcionan-rachas-2.jpg" alt="Paso 2" style={styles.stepImage} />
+          <li>Utiliza protectores de racha para no perder tu progreso.</li>
+          <img src="https://example.com/imagen-funcionan-rachas-3.jpg" alt="Paso 3" style={styles.stepImage} />
         </ol>
       </div>
     </div>
