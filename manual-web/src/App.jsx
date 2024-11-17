@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ArticlesExample from './home/tutorials/section-example/ArticlesExample';
 import VerticalNavBar from './home/components/VerticalNavBar';
 import TutorialExample from './home/tutorials/section-example/TutorialExample';
+import Cuentos from './home/tutorials/cuentos/Cuentos';
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
               <Route path="/guia-de-inicio/crear-cuenta" element={<ArticlesExample />} />
               <Route path="/guia-de-inicio/personalizar-perfil" element={<ArticlesExample />} />
               <Route path="/introduccion/tutorial-ejemplo" element={<TutorialExample />} />
+              <Route path="/interfaz/cuentos" element={<Cuentos />} />
+
             </Routes>
 
           </main>
