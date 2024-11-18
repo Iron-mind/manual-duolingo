@@ -1,17 +1,19 @@
 import React from 'react';
-
+import amigos from '../assets/Perfil/amigos.png';
 
 function Creadores() {
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
     gap: '1rem',
     padding: '1rem',
     fontFamily: 'Arial, sans-serif',
     backgroundColor: '#f7f7f7',
     borderRadius: '8px',
-    maxWidth: '400px',
-    margin: '0 auto'
+    maxWidth: '500px',
+    margin: '0 auto',
+    textAlign: 'center'
   };
 
   const studentStyle = {
@@ -21,7 +23,8 @@ function Creadores() {
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    width: '100%'
   };
 
   const nameStyle = {
@@ -35,12 +38,24 @@ function Creadores() {
     color: '#555'
   };
 
+  const imageStyle = {
+    width: '100%',
+    maxHeight: '300px',
+    borderRadius: '8px',
+    objectFit: 'cover',
+    animation: 'bounce 2s infinite'
+  };
+
   return (
     <div style={containerStyle}>
-      <h1> Creadores</h1>
-      <p> Trabajo hecho para la Universidad del valle</p>
-      <p> Diseño de Contenido para Interfaces de Usuario</p>
-      <p> Paola Johanna Rodríguez Carrillo</p>
+      <h1>Creadores</h1>
+      <p>Trabajo hecho para la Universidad del Valle</p>
+      <p>Diseño de Contenido para Interfaces de Usuario</p>
+      <img
+        style={imageStyle}
+        src={amigos} // Cambia esta URL por tu imagen o GIF
+        alt="Equipo de creadores"
+      />
       <div style={studentStyle}>
         <p style={nameStyle}>Alejandro Chara Garcia</p>
         <p style={idStyle}>2010017</p>
