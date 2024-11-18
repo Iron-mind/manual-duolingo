@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../../App.css';
+import per1 from '../../../assets/Perfil/per1.png';
+import per2 from '../../../assets/Perfil/per2.png';
+import per3 from '../../../assets/Perfil/per3.png';
+import per4 from '../../../assets/Perfil/per4.png';
+import per5 from '../../../assets/Perfil/per5.png';
+
 
 const AjustesPersonalizacion = () => {
   return (
@@ -10,7 +16,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-1.jpg" 
+          src={per1}
           alt="Acceso a tu perfil"
         />
         <div className="step-content">
@@ -25,7 +31,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-2.jpg" 
+          src={per2} 
           alt="Entrar en configuración"
         />
         <div className="step-content">
@@ -39,7 +45,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-3.jpg" 
+          src={per3}
           alt="Ajustes y Personalización"
         />
         <div className="step-content">
@@ -55,15 +61,22 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-4.jpg" 
+          src={per4}
           alt="Personalización del aprendizaje"
         />
         <div className="step-content">
-          <h2>4. Personalización del Aprendizaje</h2>
-          <p>En la sección de configuración, puedes personalizar aún más tu aprendizaje:</p>
+          <h2>4. Recordatorios practica</h2>
+          <p>En la sección de configuración, puedes configurar los recordatorios:</p>
           <ul>
-            <li><strong>Ajustes de Idioma:</strong> Selecciona el idioma que deseas aprender o agrega nuevos idiomas.</li>
-            <li><strong>Metas de Aprendizaje:</strong> Ajusta tus metas diarias (por ejemplo, "Normal", "Rápido") para que se adapten a tu disponibilidad.</li>
+          <li>
+              <strong>Activar Recordatorios:</strong> Activa los recordatorios diarios para recibir notificaciones que te animen a practicar y mantener tu rutina de estudio.
+            </li>
+            <li>
+              <strong>Personalizar Frecuencia:</strong> Ajusta la frecuencia de los recordatorios (diarios, semanales) según tu disponibilidad y preferencias.
+            </li>
+            <li>
+              <strong>Seleccionar Horarios:</strong> Elige los horarios en los que prefieres recibir los recordatorios para que se adapten a tu rutina diaria.
+            </li>
           </ul>
         </div>
       </div>
@@ -71,7 +84,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-5.jpg" 
+          src={per5}
           alt="Cambiar Avatar"
         />
         <div className="step-content">
@@ -81,34 +94,7 @@ const AjustesPersonalizacion = () => {
           </p>
         </div>
       </div>
-
-      <div className="step">
-        <img
-          className="step-image"
-          src="ruta-de-imagen-6.jpg"
-          alt="Ajustes adicionales"
-        />
-        <div className="step-content">
-          <h2>6. Ajustes Adicionales</h2>
-          <p>
-            Revisa y ajusta tus configuraciones de privacidad según prefieras compartir tu progreso con amigos o mantenerlo privado. También puedes configurar las notificaciones para recibir alertas sobre nuevas lecciones.
-          </p>
-        </div>
-      </div>
-
-      <div className="step">
-        <img
-          className="step-image"
-          src="ruta-de-imagen-7.jpg" 
-          alt="Guardar cambios"
-        />
-        <div className="step-content">
-          <h2>7. Guardar Cambios</h2>
-          <p>Asegúrate de guardar todos los cambios realizados antes de salir de la configuración para que se apliquen correctamente.</p>
-        </div>
-      </div>
-
-     
+ 
       <Link className="back-link" to="/guia-de-inicio">Volver a la guía de inicio</Link>
     </div>
   );
