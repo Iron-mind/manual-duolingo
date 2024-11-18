@@ -25,12 +25,12 @@
 
 body {
 	padding-top: 64px;
-	background-color: #235390;
+	background-color: #f4f4f4;
 	color: #3c3c3c;
 }
 
 .header {
-  position: fixed; /* Mantiene el header fijo */
+  position: fixed; 
   top: 0; 
   width: 100%;
   z-index: 1000;

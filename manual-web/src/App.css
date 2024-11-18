@@ -5,15 +5,7 @@
     box-sizing: border-box;
   }
   
-  /* Estilo global de la página */
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px; /* Añadido un pequeño padding para que no esté pegado al borde */
-  }
-  
+ 
   /* Estilo del contenedor de "Crear Perfil" */
   .crear-perfil-container, .iniciar-sesion-container, .ajustes-container {
     width: 100%;
