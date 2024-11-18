@@ -1,4 +1,6 @@
 import React from 'react';
+import img4 from  '../../../assets/interfazylecciones/4desafios.jpg';
+
 
 const styles = {
   manualSection: {
@@ -27,7 +29,7 @@ const DesafiosInterfaz = () => {
         <p>Este es el menu desafios, donde podemos encontrar los desafios del dia y su recompensa en experiencia.  </p>
         <ol>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
+          <img src={img4} alt="Paso 1" style={styles.stepImage} />
           <p> Todos los dias vas a tener desafios diferentes, con recompesas diferentes.   </p>
 
         </ol>

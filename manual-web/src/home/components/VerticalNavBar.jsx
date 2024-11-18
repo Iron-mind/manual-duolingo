@@ -15,7 +15,7 @@ const VerticalNavBar = () => {
           <li className="menu-item"><Link to="/">Introducción</Link></li>
           <li className="menu-item">Espacio de trabajo y barra lateral</li>
           <li className="menu-item"><Link to="/interfaz">Navegacion Basica</Link></li>
-          <li className="menu-item">Bases de datos</li>
+          <li className="menu-item"> <Link to="/leccionesDescripcion">Lecciones </Link> </li>
           <li className="menu-item">Compartir y colaborar</li>
           <li className="menu-item">Datos e integraciones</li>
           <li className="menu-item"><Link to="/recompensas-y-vidas">Recompensas y Vidas</Link></li>
