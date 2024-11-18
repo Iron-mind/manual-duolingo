@@ -4,20 +4,18 @@ import { Link } from 'react-router-dom';
 
 const VerticalNavBar = () => {
   return (
-    <aside class="sidebar">
-      <div class="search-box">
-        <input type="search" placeholder="Buscar" class="search-input" />
+    <aside className="sidebar">
+      <div className="search-box">
+        <input type="search" placeholder="Buscar" className="search-input" />
       </div>
-      <div class="sidebar-menu">
-        <h2 class="menu-title">Ayuda</h2>
-        <ul class="menu-items">
-          <li class="menu-item">Documentos de referencia</li>
+      <div className="sidebar-menu">
+        <h2 className="menu-title">Ayuda</h2>
+        <ul className="menu-items">
           <li className="menu-item"><Link to="/">Introducción</Link></li>
-          <li class="menu-item">Espacio de trabajo y barra lateral</li>
-          <li class="menu-item">Páginas y bloques</li>
-          <li class="menu-item">Bases de datos</li>
-          <li class="menu-item">Compartir y colaborar</li>
-          <li class="menu-item">Datos e integraciones</li>
+          <li className="menu-item"><Link to="/guia-de-inicio">Guía de Inicio</Link></li>
+          <li className="menu-item">Navegación Básica</li>
+          <li className="menu-item">Funciones Claves</li>
+          <li className="menu-item">Recursos Adicionales</li>
         </ul>
       </div>
     </aside>
