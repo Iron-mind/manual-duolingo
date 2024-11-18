@@ -32,6 +32,9 @@ import PerfilInterfaz from './home/tutorials/Interfaz/perfilinterfaz';
 import ConfiguracionInterfaz from './home/tutorials/Interfaz/configuracioninterfaz';
 import Sonidos from './home/tutorials/Interfaz/sonidos';
 import Header from './home/components/Header';
+import LeccionesArticulos from './home/tutorials/leccionesDescripcion/leccionesArticulos';
+import LeccionesPrincipales from './home/tutorials/leccionesDescripcion/leccionesprincipales';
+import LeccionesPronunciacion from './home/tutorials/leccionesDescripcion/leccionespronunciacion';
 
 
 function App() {
@@ -57,6 +60,7 @@ function App() {
               <Route path="/recompensas-y-vidas" element={<RecompensasYVidas />} />
               <Route path="/Ligas" element={<Ligas />} />
               <Route path="/estadisticas" element={<Estadisticas />} />
+
               <Route path="/interfaz" element={<ArticulosInterfaz/>} />
               <Route path="/interfaz/navegacionbasica" element={<NavegacionBasica/>} />
               <Route path="/interfaz/sonidos" element={<Sonidos/>} />
@@ -65,6 +69,10 @@ function App() {
               <Route path="/interfaz/tiendainterfaz" element={<TiendaInterfaz/>} />
               <Route path="/interfaz/perfilinterfaz" element={<PerfilInterfaz/>} />
               <Route path="/interfaz/configuracioninterfaz" element={<ConfiguracionInterfaz/>} />
+
+              <Route path="/leccionesDescripcion" element={<LeccionesArticulos/>} />
+              <Route path="/leccionesDescripcion/leccionesprincipales" element={<LeccionesPrincipales/>} />
+              <Route path="/leccionesDescripcion/leccionespronunciacion" element={<LeccionesPronunciacion/>} />
               <Route path="/desafios" element={<Desafios />} />
               <Route path="/rachas" element={<Rachas />} />
               <Route path="/tienda" element={<Tienda />} />

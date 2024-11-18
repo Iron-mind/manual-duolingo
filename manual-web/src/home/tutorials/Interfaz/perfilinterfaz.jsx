@@ -1,4 +1,6 @@
 import React from 'react';
+import img6 from  '../../../assets/interfazylecciones/6perfil.jpg';
+
 
 const styles = {
   manualSection: {
@@ -24,11 +26,16 @@ const PerfilInterfaz = () => {
     <div style={styles.manualSection}>
       <div style={styles.articleCard}>
         <h2> Seccion perfil  </h2>
+
         <p> Este es el menu del perfil, donde tenemos la oportunidad de editar nuestro avatar, ver nuestra informacion personal, estadisticas y logros.   </p>
+        <br/>
         <ol>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
+          <br/>
+          <img src={img6  } alt="Paso 1" style={styles.stepImage} />
+          <br/>
           <p> En cuanto a las estadisticas podemos encontrar informacion especifica sobre:  </p>
+          <br/>
           <li> Dias de racha.</li>
           <li> Experiencia total.</li>
           <li> Division actual. </li>

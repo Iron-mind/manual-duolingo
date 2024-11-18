@@ -1,4 +1,6 @@
 import React from 'react';
+import img5 from  '../../../assets/interfazylecciones/5tienda.jpg';
+
 
 const styles = {
   manualSection: {
@@ -26,8 +28,10 @@ const TiendaInterfaz = () => {
         <h2> Seccion Tienda  </h2>
         <p>Este es el menu tienda, donde podemos obtener potenciadores o protectores de racha haciendo uso de las gemas recibidas como recompensa de los desafios. </p>
         <ol>
+        <br/>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
+          <br/>
+          <img src={img5} alt="Paso 1" style={styles.stepImage} />
           <p>    </p>
 
         </ol>
