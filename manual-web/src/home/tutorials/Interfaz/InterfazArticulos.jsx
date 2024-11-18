@@ -59,7 +59,7 @@ const articulos = [
   },
   {
     title: '8- Aprende con Cuentos',
-    content: 'Descripcion de el menu  aprender con cuentos. ',
+    content: 'Puedes aprender con cuentos en Duolingo. Lee interesantes historias y mejora tu comprensión lectora.',
     image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fduolingo%2Fimages%2F1%2F1f%2FCuentos_Duolingo_ABC.png%2Frevision%2Flatest%2Fscale-to-width-down%2F185%3Fcb%3D20221006210511%26path-prefix%3Des&f=1&nofb=1&ipt=a220eedc8de2f3ef4bd8a168e351da26b503b127bc96bd290acf327e7b2ff1f0&ipo=images',
     route: 'interfaz/cuentos'
   }
