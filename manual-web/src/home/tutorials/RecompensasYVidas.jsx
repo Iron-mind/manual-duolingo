@@ -4,7 +4,7 @@ import Articles from '../components/articles/Articles';
 import PerderYRecuperarVidas from './vidas/PerderYRecuperarVidas';
 import Recompensas from './vidas/Recompensas';
 
-const recompensasYVidasArticles = [
+export const recompensasYVidasArticles = [
   {
     title: 'Perder y recuperar vidas',
     content: 'Aprende cómo perder y recuperar vidas en Duolingo.',
