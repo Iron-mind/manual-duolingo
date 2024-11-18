@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../../App.css'; 
+import { Link } from 'react-router-dom'; 
 import inicio1 from '../../../assets/Perfil/inicio1.png';
 import inicio2 from '../../../assets/Perfil/inicio2.png';
 import inicio3 from '../../../assets/Perfil/inicio3.png';
@@ -9,6 +8,7 @@ import inicio5 from '../../../assets/Perfil/inicio5.png';
 import inicio6 from '../../../assets/Perfil/inicio6.png';
 import inicio7 from '../../../assets/Perfil/inicio7.png';
 
+import "../../../index.css";
 
 
 const IniciarSesion = () => {
