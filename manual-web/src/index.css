@@ -100,11 +100,14 @@ body {
 	padding: 0 1rem;
 	display: flex;
 	gap: 2rem;
+	position: relative;
 }
 
 .sidebar {
-	width: 300px;
-	flex-shrink: 0;
+  position: -webkit-sticky; 
+  position: -moz-sticky; 
+  position: sticky;
+  top: 0;
 }
 
 .search-box {
@@ -121,6 +124,7 @@ body {
 	border-radius: 0.75rem;
 	font-size: 1rem;
 	transition: border-color 0.2s;
+	color: black;
 }
 
 .search-input:focus {
