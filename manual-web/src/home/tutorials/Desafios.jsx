@@ -3,18 +3,20 @@ import { Routes, Route } from 'react-router-dom';
 import Articles from '../components/articles/Articles';
 import AccederDesafios from './DesafiosComponents/AccederDesafios';
 import DesafiosDiaMes from './DesafiosComponents/DesafiosDiaMes';
+import img4 from  '../../assets/desafios/logo4.png';
+import img3 from  '../../assets/desafios/logo3.png';
 
 const desafiosArticles = [
   {
     title: 'Cómo acceder a desafíos',
     content: 'Para acceder a los desafíos, haz clic en el icono de desafíos en la barra de navegación.',
-    image: 'https://example.com/imagen-acceder-desafios.jpg',
+    src: img4,
     route: 'accederDesafios'
   },
   {
     title: 'Desafíos del día y del mes',
     content: 'Descripción sobre los desafíos del día y del mes.',
-    image: 'https://example.com/imagen-desafios-dia-mes.jpg',
+    image: img3,
     route: 'dia-mes'
   }
 ];

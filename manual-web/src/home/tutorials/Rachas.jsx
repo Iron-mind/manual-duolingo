@@ -2,9 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Articles from '../components/articles/Articles';
 import ComoFuncionanRachas from './rachas/ComoFuncionanRachas';
-import RecompensasRachas from './rachas/RecompensasRachas';
+
 import AccederRachas from './rachas/AccederRachas';
 import MetasRacha from './rachas/MetasRacha';
+import RecompensasRachas from './rachas/RecompensasRachas';
 
 const rachasArticles = [
   {
@@ -23,7 +24,7 @@ const rachasArticles = [
     title: 'Recompensas de rachas',
     content: 'Las recompensas de rachas incluyen monedas adicionales y bonificaciones de experiencia.',
     image: 'https://example.com/imagen-recompensas-rachas.jpg',
-    route: 'recompensas'
+    route: 'recompensasRachas'
   },
   {
     title: 'Metas de racha',
@@ -40,7 +41,7 @@ const Rachas = () => {
       <Articles articles={rachasArticles} />
       <Routes>
         <Route path="funcionan" element={<ComoFuncionanRachas />} />
-        <Route path="recompensas" element={<RecompensasRachas />} />
+        <Route path="recompensasRachas" element={<RecompensasRachas />} />
         <Route path="accederRachas" element={<AccederRachas />} />
         <Route path="metas" element={<MetasRacha />} />
       </Routes>
