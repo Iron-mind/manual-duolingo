@@ -13,7 +13,6 @@ import Cuentos from './home/tutorials/cuentos/Cuentos';
 import Introduccion from './home/tutorials/introduccion/Introduccion';
 import RecompensasYVidas from './home/tutorials/RecompensasYVidas';
 import Estadisticas from './home/tutorials/Estadisticas';
-import Desafios from './home/tutorials/Ligas';
 import Rachas from './home/tutorials/Rachas';
 import Tienda from './home/tutorials/Tienda';
 import AccederTienda from './home/tutorials/TiendaComponents/AccederTienda';
@@ -41,6 +40,7 @@ import Header from './home/components/Header';
 import LeccionesArticulos from './home/tutorials/leccionesDescripcion/leccionesArticulos';
 import LeccionesPrincipales from './home/tutorials/leccionesDescripcion/leccionesprincipales';
 import LeccionesPronunciacion from './home/tutorials/leccionesDescripcion/leccionespronunciacion';
+import Desafios from './home/tutorials/Desafios';
 
 
 function App() {
@@ -91,7 +91,7 @@ function App() {
               <Route path="accederDesafios" element={<AccederDesafios />} />
               <Route path="dia-mes" element={<DesafiosDiaMes />} />
               <Route path="funcionan" element={<ComoFuncionanRachas />} />
-              <Route path="recompensas" element={<RecompensasRachas />} />
+              <Route path="recompensasRachas" element={<RecompensasRachas />} />
               <Route path="accederRachas" element={<AccederRachas />} />
               <Route path="metas" element={<MetasRacha />} />
               <Route path="accederLigas" element={<AccederLigas />} />

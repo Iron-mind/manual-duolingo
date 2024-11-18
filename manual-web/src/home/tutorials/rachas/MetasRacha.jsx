@@ -1,4 +1,5 @@
 import React from 'react';
+import recompensasRachas from '../../../assets/rachas/metaRacha.png';
 
 const styles = {
   manualSection: {
@@ -21,18 +22,24 @@ const styles = {
 
 const MetasRacha = () => {
   return (
-    <div style={styles.manualSection}>
-      <div style={styles.articleCard}>
-        <h2>Metas de racha</h2>
-        <p>Para establecer y alcanzar metas de racha, sigue estos pasos:</p>
-        <ol>
-          <li>Establece una meta diaria de lecciones completadas.</li>
-          <img src="https://example.com/imagen-metas-racha-1.jpg" alt="Paso 1" style={styles.stepImage} />
-          <li>Monitorea tu progreso y ajusta tus metas según sea necesario.</li>
-          <img src="https://example.com/imagen-metas-racha-2.jpg" alt="Paso 2" style={styles.stepImage} />
-        </ol>
-      </div>
-    </div>
+    <article className="bg-white w-100 mx-auto p-6 space-y-8">
+      <header>
+        <h1 className="text-3xl font-bold text-green-500 mb-2">Metas de racha</h1>
+        <p className="text-gray-600 text-lg">Para establecer y alcanzar metas de racha, sigue estos pasos detallados:</p>
+      </header>
+
+      <section className="space-y-12">
+        <div className="space-y-4">
+          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+            <li>
+              <span className="font-semibold">Establece una meta de días consecutivos.</span>
+              <p className="text-gray-600">Comprométete a mantener una racha de cierta cantidad de días consecutivos. Esto te ayudará a mantener la motivación y a alcanzar tus objetivos de aprendizaje.</p>
+              <img src={recompensasRachas} alt="Paso 1" className="w-full responsive-img mb-2" />
+            </li>
+          </ol>
+        </div>
+      </section>
+    </article>
   );
 };
 

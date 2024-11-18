@@ -516,7 +516,7 @@ body {
   /* Estilo del contenedor de "Crear Perfil" */
   .crear-perfil-container, .iniciar-sesion-container, .ajustes-container {
     width: 100%;
-    max-width: 800px; /* Ajuste el max-width para mayor flexibilidad */
+    max-width: 800px; 
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
