@@ -1,4 +1,8 @@
 import React from 'react';
+import img3 from  '../../../assets/interfazylecciones/3ligas.jpg';
+import img4 from  '../../../assets/interfazylecciones/ligas.jpg';
+
+
 
 const styles = {
   manualSection: {
@@ -27,8 +31,10 @@ const LigasInterfaz = () => {
         <p>Este es el menu de Ligas, donde podemos ver a que liga pertenecemos actualmente, nuestro puntaje actual y el tiempo restante por semana. </p>
         <ol>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
-          <p>  </p>
+          <br/>
+          <img src={img3} alt="Paso 1" style={styles.stepImage} />
+          <p> Donde semanal mente se deberia quedar al menos en el top 3 de personas con mas experiencia de tu liga para poder ascender a la siguiente liga. </p>
+          <img src={img4} alt="Paso 1" style={styles.stepImage} />
 
         </ol>
       </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import img2 from  '../../../assets/interfazylecciones/2sonidos.jpg';
+
 
 const styles = {
   manualSection: {
@@ -27,7 +29,7 @@ const Sonidos = () => {
         <p>Este es el menu de sonidos, donde podemos encontrar lecciones especificas para la practica de la fonetica. </p>
         <ol>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
+          <img src={img2} alt="Paso 1" style={styles.stepImage} />
           <p> Como podemos ver se encuentran diversas lecciones para la practica del oido y pronunciacion de nuestro lenguaje seleccionado. </p>
 
         </ol>
