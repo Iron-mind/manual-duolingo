@@ -1,38 +1,32 @@
 import React from 'react';
-
-const styles = {
-  manualSection: {
-    padding: '20px',
-  },
-  articleCard: {
-    backgroundColor: 'white',
-    padding: '20px',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    marginBottom: '20px',
-  },
-  stepImage: {
-    width: '100%',
-    height: 'auto',
-    marginBottom: '20px',
-    borderRadius: '8px',
-  },
-};
+import desafioMenu from '../../../assets/desafios/desafioMenu.png';
+import desafioInicio from '../../../assets/desafios/desafioInicio.png';
 
 const AccederDesafios = () => {
   return (
-    <div style={styles.manualSection}>
-      <div style={styles.articleCard}>
-        <h2>Cómo acceder a desafíos</h2>
-        <p>Para acceder a los desafíos, sigue estos pasos:</p>
-        <ol>
-          <li>Haz clic en el icono de desafíos en la barra de navegación.</li>
-          <img src="https://example.com/imagen-acceder-desafios-1.jpg" alt="Paso 1" style={styles.stepImage} />
-          <li>Serás redirigido a la página de desafíos donde podrás ver todos los desafíos disponibles.</li>
-          <img src="https://example.com/imagen-acceder-desafios-2.jpg" alt="Paso 2" style={styles.stepImage} />
-        </ol>
-      </div>
-    </div>
+    <article className="bg-white w-100 mx-auto p-6 space-y-8">
+      <header>
+        <h1 className="text-3xl font-bold text-green-500 mb-2">Cómo acceder a desafíos</h1>
+        <p className="text-gray-600 text-lg">Para acceder a los desafíos, sigue estos pasos detallados:</p>
+      </header>
+
+      <section className="space-y-12">
+        <div className="space-y-4">
+          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+            <li>
+              <span className="font-semibold">Haz clic en el icono de desafíos en la barra de navegación.</span>
+              <p className="text-gray-600">El icono de desafíos se encuentra en la parte izquierda de la pantalla, representado por un cofre.</p>
+              <img src={desafioMenu} alt="Paso 1" className="w-full responsive-img mb-2" />
+            </li>
+            <li>
+              <span className="font-semibold">Serás redirigido a la página de desafíos donde podrás ver todos los desafíos disponibles.</span>
+              <p className="text-gray-600">En esta página, podrás ver una lista de todos los desafíos actuales y sus respectivas recompensas.</p>
+              <img src={desafioInicio} alt="Paso 2" className="w-full responsive-img mb-2" />
+            </li>
+          </ol>
+        </div>
+      </section>
+    </article>
   );
 };
 

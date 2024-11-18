@@ -1,4 +1,7 @@
 import React from 'react';
+import recompensaLeccion from '../../../assets/recompensas/recompensaLeccion.png';
+import recompensaLeccionGema from '../../../assets/recompensas/recompensaLeccionGema.png';
+import recompensasRachas from '../../../assets/rachas/recompensasRachas.png';
 
 const styles = {
   manualSection: {
@@ -26,12 +29,21 @@ const Recompensas = () => {
         <h2>Recompensas</h2>
         <p>Las recompensas en Duolingo incluyen:</p>
         <ul>
-          <li>Monedas adicionales por completar lecciones.</li>
-          <img src="https://example.com/imagen-recompensas-1.jpg" alt="Recompensas 1" style={styles.stepImage} />
-          <li>Bonificaciones de experiencia por mantener rachas.</li>
-          <img src="https://example.com/imagen-recompensas-2.jpg" alt="Recompensas 2" style={styles.stepImage} />
-          <li>Trofeos y medallas por alcanzar hitos importantes.</li>
-          <img src="https://example.com/imagen-recompensas-3.jpg" alt="Recompensas 3" style={styles.stepImage} />
+          <li>
+            <span className="font-semibold">Monedas adicionales por completar lecciones:</span>
+            <p className="text-gray-600">Recibirás monedas adicionales cada vez que completes una lección.</p>
+            <img src={recompensaLeccion} alt="Recompensa por lección" style={styles.stepImage} />
+          </li>
+          <li>
+            <span className="font-semibold">Gemas adicionales por completar lecciones:</span>
+            <p className="text-gray-600">Recibirás gemas adicionales cada vez que completes una lección.</p>
+            <img src={recompensaLeccionGema} alt="Recompensa de gemas" style={styles.stepImage} />
+          </li>
+          <li>
+            <span className="font-semibold">Bonificaciones de experiencia por mantener rachas:</span>
+            <p className="text-gray-600">Mantener una racha diaria te otorga bonificaciones de experiencia, ayudándote a subir de nivel más rápido.</p>
+            <img src={recompensasRachas} alt="Recompensas de rachas" style={styles.stepImage} />
+          </li>
         </ul>
       </div>
     </div>

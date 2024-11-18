@@ -1,4 +1,6 @@
 import React from 'react';
+import ligaInicio from '../../../assets/ligas/ligaInicio.png';
+import ligas from '../../../assets/ligas/ligas.png';
 
 const styles = {
   manualSection: {
@@ -21,18 +23,29 @@ const styles = {
 
 const AccederLigas = () => {
   return (
-    <div style={styles.manualSection}>
-      <div style={styles.articleCard}>
-        <h2>Cómo acceder a las ligas</h2>
-        <p>Para acceder a las ligas, sigue estos pasos:</p>
-        <ol>
-          <li>Haz clic en el icono de ligas en la barra de navegación.</li>
-          <img src="https://example.com/imagen-acceder-ligas-1.jpg" alt="Paso 1" style={styles.stepImage} />
-          <li>Serás redirigido a la página de ligas donde podrás ver tu progreso.</li>
-          <img src="https://example.com/imagen-acceder-ligas-2.jpg" alt="Paso 2" style={styles.stepImage} />
-        </ol>
-      </div>
-    </div>
+    <article className="bg-white w-100 mx-auto p-6 space-y-8">
+      <header>
+        <h1 className="text-3xl font-bold text-green-500 mb-2">Cómo acceder a las ligas</h1>
+        <p className="text-gray-600 text-lg">Para acceder a las ligas, sigue estos pasos detallados:</p>
+      </header>
+
+      <section className="space-y-12">
+        <div className="space-y-4">
+          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+            <li>
+              <span className="font-semibold">Haz clic en el icono de ligas en la barra de navegación.</span>
+              <p className="text-gray-600">El icono de ligas se encuentra en la parte izquierda de la pantalla, representado por un escudo.</p>
+              <img src={ligaInicio} alt="Paso 1" style={styles.stepImage} />
+            </li>
+            <li>
+              <span className="font-semibold">Serás redirigido a la página de ligas donde podrás ver tu progreso.</span>
+              <p className="text-gray-600">En esta página, podrás ver tu progreso y las recompensas disponibles por participar en las ligas.</p>
+              <img src={ligas} alt="Paso 2" style={styles.stepImage} />
+            </li>
+          </ol>
+        </div>
+      </section>
+    </article>
   );
 };
 

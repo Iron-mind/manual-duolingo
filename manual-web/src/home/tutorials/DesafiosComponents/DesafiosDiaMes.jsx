@@ -1,4 +1,6 @@
 import React from 'react';
+import desafioMenu from '../../../assets/desafios/desafioMenu.png';
+import desafioDiarios from '../../../assets/desafios/desafioDiarios.png';
 
 const styles = {
   manualSection: {
@@ -17,22 +19,46 @@ const styles = {
     marginBottom: '20px',
     borderRadius: '8px',
   },
+  stepImage1: {
+    width: '50%',
+    height: 'auto',
+    marginBottom: '20px',
+    borderRadius: '8px',
+  },
 };
 
 const DesafiosDiaMes = () => {
   return (
-    <div style={styles.manualSection}>
-      <div style={styles.articleCard}>
-        <h2>Desafíos del día y del mes</h2>
-        <p>Descripción sobre los desafíos del día y del mes:</p>
-        <ol>
-          <li>Desafíos del día: Estos desafíos se actualizan diariamente y te permiten ganar recompensas diarias.</li>
-          <img src="https://example.com/imagen-desafios-dia.jpg" alt="Desafíos del día" style={styles.stepImage} />
-          <li>Desafíos del mes: Estos desafíos se actualizan mensualmente y te permiten ganar recompensas más grandes.</li>
-          <img src="https://example.com/imagen-desafios-mes.jpg" alt="Desafíos del mes" style={styles.stepImage} />
-        </ol>
-      </div>
-    </div>
+    <article className="bg-white w-100 mx-auto p-6 space-y-8">
+      <header>
+        <h1 className="text-3xl font-bold text-green-500 mb-2">Desafíos del día y del mes</h1>
+        <p className="text-gray-600 text-lg">Descripción sobre los desafíos del día y del mes:</p>
+      </header>
+
+      <section className="space-y-12">
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold text-gray-800">Desafíos del día</h2>
+          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+            <li>
+              <span className="font-semibold">Participa en los desafíos diarios para ganar recompensas diarias.</span>
+              <p className="text-gray-600">Estos desafíos se actualizan diariamente y te permiten ganar recompensas diarias.</p>
+              <img src={desafioDiarios} alt="Desafíos del día" style={styles.stepImage1} />
+            </li>
+          </ol>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold text-gray-800">Desafíos del mes</h2>
+          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+            <li>
+              <span className="font-semibold">Participa en los desafíos mensuales para ganar recompensas más grandes.</span>
+              <p className="text-gray-600">Estos desafíos se actualizan mensualmente y te permiten ganar recompensas más grandes.</p>
+              <img src={desafioMenu} alt="Desafíos del mes" style={styles.stepImage} />
+            </li>
+          </ol>
+        </div>
+      </section>
+    </article>
   );
 };
 
