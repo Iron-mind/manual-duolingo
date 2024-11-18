@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../../App.css'; // Asegúrate de que esté bien importado tu archivo CSS
+import '../../../App.css';
 
 const AjustesPersonalizacion = () => {
   return (
@@ -10,7 +10,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-1.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-1.jpg" 
           alt="Acceso a tu perfil"
         />
         <div className="step-content">
@@ -25,7 +25,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-2.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-2.jpg" 
           alt="Entrar en configuración"
         />
         <div className="step-content">
@@ -39,7 +39,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-3.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-3.jpg" 
           alt="Ajustes y Personalización"
         />
         <div className="step-content">
@@ -55,7 +55,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-4.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-4.jpg" 
           alt="Personalización del aprendizaje"
         />
         <div className="step-content">
@@ -71,7 +71,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-5.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-5.jpg" 
           alt="Cambiar Avatar"
         />
         <div className="step-content">
@@ -85,7 +85,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-6.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-6.jpg"
           alt="Ajustes adicionales"
         />
         <div className="step-content">
@@ -99,7 +99,7 @@ const AjustesPersonalizacion = () => {
       <div className="step">
         <img
           className="step-image"
-          src="ruta-de-imagen-7.jpg" // Cambia esta ruta por la imagen que necesites
+          src="ruta-de-imagen-7.jpg" 
           alt="Guardar cambios"
         />
         <div className="step-content">
@@ -108,7 +108,7 @@ const AjustesPersonalizacion = () => {
         </div>
       </div>
 
-      {/* Volver a la guía de inicio */}
+     
       <Link className="back-link" to="/guia-de-inicio">Volver a la guía de inicio</Link>
     </div>
   );

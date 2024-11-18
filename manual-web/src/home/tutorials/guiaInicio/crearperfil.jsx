@@ -64,7 +64,6 @@ const CrearPerfil = () => {
         </div>
       </div>
 
-      {/* Volver a la guía de inicio */}
       <Link className="back-link" to="/guia-de-inicio">Volver a la guía de inicio</Link>
     </div>
   );
