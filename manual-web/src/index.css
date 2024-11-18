@@ -104,10 +104,10 @@ body {
 }
 
 .sidebar {
-  position: -webkit-sticky; 
-  position: -moz-sticky; 
-  position: sticky;
-  top: 0;
+ 	position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .search-box {
