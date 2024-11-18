@@ -1,5 +1,6 @@
 import React from 'react';
 import Articles from '../../components/articles/Articles';
+
 const articlesExample = [
   {
     title: 'How to create a new account',
@@ -8,7 +9,6 @@ const articlesExample = [
     route: 'introduccion/tutorial-ejemplo'
 
   },
-
   {
     title: 'How to personalize your profile',
     content: 'To personalize your profile, click on your profile picture and select "Edit Profile".',
@@ -36,11 +36,13 @@ const articlesExample = [
     route: 'guia-de-inicio/practicar-escritura'
   },
   {
-    title: 'How to practice writing',
+    title: 'How to practice lololo',
     content: 'To practice writing, click on the text box and start typing when prompted.',
     image: 'https://img.freepik.com/fotos-premium/imagen-aleatoria_590832-8260.jpg',
     route: 'guia-de-inicio/practicar-escritura'
   }
+
+  
 ]
 const ArticlesExample = () => {
   return (
