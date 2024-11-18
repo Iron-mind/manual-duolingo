@@ -41,6 +41,7 @@ import LeccionesArticulos from './home/tutorials/leccionesDescripcion/leccionesA
 import LeccionesPrincipales from './home/tutorials/leccionesDescripcion/leccionesprincipales';
 import LeccionesPronunciacion from './home/tutorials/leccionesDescripcion/leccionespronunciacion';
 import Desafios from './home/tutorials/Desafios';
+import Creadores from './home/Creadores';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Introduccion />} />
+              <Route path="/creadores" element={<Creadores />} />
               <Route path="/introduccion/" element={<Introduccion />} />
               <Route path="/guia-de-inicio/crear-cuenta" element={<ArticlesExample />} />
               <Route path="/guia-de-inicio/personalizar-perfil" element={<ArticlesExample />} />
