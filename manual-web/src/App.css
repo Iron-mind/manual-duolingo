@@ -1,0 +1,83 @@
+
+  /* Estilo del contenedor de "Crear Perfil" */
+  .crear-perfil-container, .iniciar-sesion-container, .ajustes-container {
+    width: 100%;
+    max-width: 800px; /* Ajuste el max-width para mayor flexibilidad */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Título principal de la página */
+  .title {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del párrafo */
+  .crear-perfil-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo de cada paso */
+  .step {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen encima del texto */
+    align-items: center; /* Centra los elementos dentro de cada paso */
+    margin-bottom: 30px;
+  }
+  
+  .step-image {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-bottom: 20px; /* Separación entre la imagen y el contenido */
+  }
+
+  .step-image2 {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-bottom: 20px; /* Separación entre la imagen y el contenido */
+  }
+  
+  .step-content {
+    text-align: center; /* Centra el texto en cada paso */
+    max-width: 700px;
+  }
+  
+  .step h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Estilo del enlace de vuelta a la guía de inicio */
+  .back-link {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .back-link:hover {
+    background-color: #45a049;
+  }
+  
