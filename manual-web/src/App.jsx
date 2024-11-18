@@ -57,7 +57,7 @@ function App() {
 
 
             <Routes>
-              <Route path="/" element={<ArticlesExample />} />
+              <Route path="/" element={<Introduccion />} />
               <Route path="/introduccion/" element={<Introduccion />} />
               <Route path="/guia-de-inicio/crear-cuenta" element={<ArticlesExample />} />
               <Route path="/guia-de-inicio/personalizar-perfil" element={<ArticlesExample />} />
