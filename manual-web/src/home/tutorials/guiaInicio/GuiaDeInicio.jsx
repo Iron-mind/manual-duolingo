@@ -28,7 +28,7 @@ const guiaDeInicio = [
 const GuiaDeInicio = () => {
   return (
     <div>
-      <h1 className="main-title">Guía de Inicio</h1> {/* Cambiado a className */}
+      <h1 className="main-title">Guía de Inicio</h1> 
       <Articles articles={guiaDeInicio} />
     </div>
   );
