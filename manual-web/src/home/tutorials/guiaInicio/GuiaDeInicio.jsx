@@ -33,5 +33,5 @@ const GuiaDeInicio = () => {
     </div>
   );
 };
-
+export { guiaDeInicio };
 export default GuiaDeInicio;
