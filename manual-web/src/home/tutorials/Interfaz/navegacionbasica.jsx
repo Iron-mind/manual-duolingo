@@ -1,4 +1,5 @@
 import React from 'react';
+import imgInterfazPrincipal from '../../../assets/interfaz/interfaz-principal.jpg';
 
 const styles = {
   manualSection: {
@@ -27,7 +28,7 @@ const NavegacionBasica = () => {
         <p>Este es el menu primario, donde podemos encontrar las respectivas lecciones de nuetras ruta de aprendizaje. </p>
         <ol>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
+          <img src={imgInterfazPrincipal} alt="Paso 1" style={styles.stepImage} />
           <p>Donde podemos ver nuestro el progreso de nuestro aprendizaje, lecciones, y un breve vistazo de nuestro desempeño en las ligas. </p>
 
         </ol>

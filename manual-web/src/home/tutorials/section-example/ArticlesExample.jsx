@@ -47,7 +47,6 @@ const ArticlesExample = () => {
     <div>
       <h1 class="main-title">Artículos</h1>
       <Articles articles={articlesExample} />
-      <button>Start Now</button>
     </div>
   );
 };
