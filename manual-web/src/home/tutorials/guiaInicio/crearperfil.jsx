@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../../App.css'; // Asegúrate de importar el archivo CSS correctamente
 import descargar from '../../../assets/Perfil/descargar.png';
 import crearperfil from '../../../assets/Perfil/crearperfil.png';
 import idioma from '../../../assets/Perfil/idioma.png';
 import meta from '../../../assets/Perfil/meta.png';
+
+import "../../../index.css";
 
 const CrearPerfil = () => {
   return (

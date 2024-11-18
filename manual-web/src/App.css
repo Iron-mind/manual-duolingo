@@ -1,11 +1,4 @@
-/* Reset de márgenes y padding para todos los elementos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
- 
+
   /* Estilo del contenedor de "Crear Perfil" */
   .crear-perfil-container, .iniciar-sesion-container, .ajustes-container {
     width: 100%;
