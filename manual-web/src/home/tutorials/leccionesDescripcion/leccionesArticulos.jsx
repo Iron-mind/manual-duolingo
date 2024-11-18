@@ -27,7 +27,6 @@ const LeccionesArticulos = () => {
     <div>
       <h1 class="main-title">Menus</h1>
       <Articles articles={articulos} />
-      <button>Start Now</button>
     </div>
   );
 };

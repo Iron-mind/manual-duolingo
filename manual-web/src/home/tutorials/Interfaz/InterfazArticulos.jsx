@@ -9,8 +9,6 @@ import img6 from  '../../../assets/interfazylecciones/logo6.jpg';
 import img7 from  '../../../assets/interfazylecciones/logo7.png';
 
 
-
-
 const articulos = [
   {
     title: '1- Aprender ',
@@ -66,14 +64,18 @@ const articulos = [
     route: 'interfaz/cuentos'
   }
 ]
+
+
 const ArticulosInterfaz = () => {
   return (
     <div>
       <h1 className="main-title">Menus</h1>
       <Articles articles={articulos} />
-      <button>Start Now</button>
     </div>
   );
 };
 
+const articulosInterfaz = articulos
+
+export { articulosInterfaz }
 export default ArticulosInterfaz;
