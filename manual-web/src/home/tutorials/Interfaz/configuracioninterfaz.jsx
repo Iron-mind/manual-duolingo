@@ -1,4 +1,6 @@
 import React from 'react';
+import img7 from  '../../../assets/interfazylecciones/7configuracion.jpg';
+
 
 const styles = {
   manualSection: {
@@ -27,7 +29,7 @@ const ConfiguracionInterfaz = () => {
         <p> Este es el menu de configuracion, donde tenemos la oportunidad de cambiar nuestras preferencias e informacion.  </p>
         <ol>
           <p>El cual luce de la siguiente manera: </p>
-          <img src=" " alt="Paso 1" style={styles.stepImage} />
+          <img src={img7} alt="Paso 1" style={styles.stepImage} />
           <p> En este menu tenemos la oportunidad de acceder o manipular: </p>
           <li> Preferencias </li>
           <li> Perfil</li>
