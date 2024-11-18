@@ -24,11 +24,16 @@
 }
 
 body {
+	padding-top: 64px;
 	background-color: #235390;
 	color: #3c3c3c;
 }
 
 .header {
+  position: fixed; /* Mantiene el header fijo */
+  top: 0; 
+  width: 100%;
+  z-index: 1000;
   background-color: #58cc02;
   padding: 1rem 2rem;
   display: flex;

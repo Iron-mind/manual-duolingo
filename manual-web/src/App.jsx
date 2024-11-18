@@ -31,23 +31,18 @@ import TiendaInterfaz from './home/tutorials/Interfaz/tiendainterfaz';
 import PerfilInterfaz from './home/tutorials/Interfaz/perfilinterfaz';
 import ConfiguracionInterfaz from './home/tutorials/Interfaz/configuracioninterfaz';
 import Sonidos from './home/tutorials/Interfaz/sonidos';
+import Header from './home/components/Header';
 
 
 function App() {
 
   return (
     <div>
-      <header className="header">
-        <a href="/" className="logo">Duolingo</a>
-        <nav className="nav">
-          <h1>Manual de Usuario</h1>
-          <p>Bienvenido al manual de usuario de DUOLINGO. Aquí aprenderás cómo usar las funciones principales.</p>
-        </nav>
-        <button className="get-started-btn">Obtén Duolingo gratis</button>
-      </header>
-
+      <Router>
+      <Header></Header>
       <div className="container">
-        <Router>
+        
+        
           <VerticalNavBar />
           <main className="main-content">
 
@@ -88,8 +83,9 @@ function App() {
             </Routes>
 
           </main>
-        </Router>
+       
       </div>
+      </Router>
     </div>
   )
 }
