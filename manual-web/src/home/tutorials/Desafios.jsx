@@ -3,14 +3,15 @@ import { Routes, Route } from 'react-router-dom';
 import Articles from '../components/articles/Articles';
 import AccederDesafios from './DesafiosComponents/AccederDesafios';
 import DesafiosDiaMes from './DesafiosComponents/DesafiosDiaMes';
-import img4 from  '../../assets/desafios/logo4.png';
 import img3 from  '../../assets/desafios/logo3.png';
+import img2 from  '../../assets/desafios/logo4.png';
+import img4 from  '../../assets/interfazylecciones/logo4.jpg';
 
 const desafiosArticles = [
   {
     title: 'Cómo acceder a desafíos',
     content: 'Para acceder a los desafíos, haz clic en el icono de desafíos en la barra de navegación.',
-    src: img4,
+    image: img2,
     route: 'accederDesafios'
   },
   {
