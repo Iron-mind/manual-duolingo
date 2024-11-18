@@ -2,6 +2,19 @@ import React, { useState } from 'react';
 import './VerticalNavBar.css';
 import { Link } from 'react-router-dom';
 
+// Función para convertir texto en un formato adecuado para las URLs
+const slugify = (text) => {
+  return text
+    .toLowerCase()
+    .normalize("NFD")               // Normaliza caracteres acentuados a su forma base
+    .replace(/[\u0300-\u036f]/g, "") // Elimina los acentos
+    .replace(/\s+/g, '-')            // Reemplaza los espacios por guiones
+    .replace(/[^\w\-]+/g, '')        // Elimina caracteres no alfanuméricos
+    .replace(/\-\-+/g, '-')          // Reemplaza guiones dobles por un solo guion
+    .replace(/^-+/, '')              // Elimina guiones al principio
+    .replace(/-+$/, '');             // Elimina guiones al final
+};
+
 const VerticalNavBar = () => {
   // Estado para manejar el texto de búsqueda
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,13 +26,8 @@ const VerticalNavBar = () => {
 
   // Lista de los elementos del menú
   const menuItems = [
-    "Introducción",
-    "Guía de Inicio",
-    "Navegación Básica",
-    "Funciones Claves",
-    "Recursos Adicionales",
-    "Documentos de referencia",
-    "Espacio de trabajo y barra lateral",
+    "Introduccion",
+    "Guia de Inicio",
     "Navegacion Basica",
     "Lecciones",
     "Compartir y colaborar",
@@ -30,6 +38,13 @@ const VerticalNavBar = () => {
     "Rachas",
     "Tienda"
   ];
+
+  // Mapas de rutas personalizadas
+  const routeMappings = {
+    "Navegacion Basica": "/interfaz", 
+    "Lecciones":"/leccionesDescripcion"
+    
+  };
 
   // Filtrar los elementos del menú con base en el término de búsqueda
   const filteredItems = menuItems.filter(item =>
@@ -53,7 +68,10 @@ const VerticalNavBar = () => {
           {/* Aquí mapeamos los elementos filtrados */}
           {filteredItems.map((item, index) => (
             <li key={index} className="menu-item">
-              <Link to={`/${item.toLowerCase().replace(/\s/g, '-')}`}>{item}</Link>
+              {/* Usamos un mapa para las rutas personalizadas */}
+              <Link to={routeMappings[item] || `/${slugify(item)}`}>
+                {item}
+              </Link>
             </li>
           ))}
         </ul>
